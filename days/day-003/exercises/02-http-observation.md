@@ -2,18 +2,18 @@
 
 ## Website: github.com
 
-### Request pertama
+### First request
 - Method: GET
 - Status Code: 200
 
 ### Total requests
-- Berapa total request untuk load 1 halaman? = 267 request
+- How many total requests to load 1 page? = 267 requests
 
-### Tipe file yang di-download (perkiraan)
+### File types downloaded (approximate)
 - HTML: 1
 - CSS: 35
 - JavaScript: 198
 - Images: 6
 
 ### Observations
-- Jumlah requestnya cukup bikin kaget juga ya ternyata sebanyak itu, tapi html cuman 1 dan img cuman 6 sisanya js paling banyak tuh.
+- The number of requests was quite surprising — that many just for one page. Only 1 HTML file and 6 images; JavaScript made up the vast majority.

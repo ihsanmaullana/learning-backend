@@ -3,4 +3,4 @@
 ## HTTP vs HTTPS experiment
 - curl -I http://github.com → Status: 301
 - curl -I https://github.com → Status: 200
-- Apa yang terjadi? Jadi pas di yang http itu halaman dialihkan karna status code 301, dialihkannya ke https, karna ada keterangannya di location untuk dialihkannya, sedangkan yang udah pakai https itu udah bener makannya statusnya 200 jadi berhasil masuk.
+- What happened? The HTTP request was redirected because the status code was 301. It redirected to HTTPS, as indicated by the `Location` header in the response. The HTTPS request was correct from the start, which is why it returned 200 — a successful response.

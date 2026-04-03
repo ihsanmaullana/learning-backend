@@ -1,29 +1,29 @@
 # Day 004 - Notes: What is a Program?
 
-## Program itu apa?
-Daftar instruksi yang dikerjakan komputer dari atas ke bawah,
-satu per satu, tanpa skip.
+## What is a program?
+A list of instructions that the computer executes from top to bottom,
+one by one, without skipping.
 
-## Yang saya pahami hari ini:
+## What I understood today:
 
-**`let` = menyimpan data dengan nama**
-Komputer simpan nilai di memori, saya bisa panggil pakai namanya.
-Contoh: `let totalSources = 50` → simpan angka 50 dengan nama `totalSources`
+**`let` = store data with a name**
+The computer saves a value in memory, and I can reference it by name.
+Example: `let totalSources = 50` → stores the number 50 under the name `totalSources`
 
-**`console.log()` = minta komputer print sesuatu ke terminal**
-Cara saya lihat apa yang terjadi di dalam program.
+**`console.log()` = ask the computer to print something to the terminal**
+This is how I see what's happening inside the program.
 
-**Node.js = yang jalanin file `.js` di terminal**
-Tanpa Node.js, file `.js` cuma teks biasa.
-Node.js yang "baca" dan eksekusi instruksinya.
+**Node.js = the thing that runs `.js` files in the terminal**
+Without Node.js, a `.js` file is just plain text.
+Node.js is what "reads" and executes the instructions.
 
-**Error message itu teman, bukan musuh**
-Error kasih tahu: masalahnya apa + di baris berapa.
+**Error messages are friends, not enemies**
+An error tells you: what the problem is + which line it's on.
 `ReferenceError: greting is not defined` =
-komputer cari variabel bernama `greting`, tidak ada.
+the computer looked for a variable named `greting`, found none.
 
-## Cara baca error message
+## How to read an error message
 
-Lihat baris pertama yang menyebut nama file saya sendiri.
-Di situ ada: nama file + nomor baris + karakter yang bermasalah.
-Sisa stack trace = internal Node.js, abaikan dulu.
+Find the first line that mentions my own file name.
+It shows: file name + line number + the problematic character.
+The rest of the stack trace = Node.js internals, ignore for now.

@@ -7,7 +7,7 @@ Print a greeting message using a variable.
 
 **The error I got:**
 
-Error appeared at line :
+Error appeared at line:
 
 /home/ihsanmaulana/projects/learning-backend/days/day-004/exercises/02-errors.js:5
 console.log(greting);
@@ -25,13 +25,13 @@ ReferenceError: greting is not defined
 Node.js v18.19.1
 
 **Why this happened:**
-Saya menulis `greting` tapi nama variabelnya `greeting`.
-Komputer tidak bisa tebak maksud saya — dia cari persis `greting`,
-tidak ketemu, langsung berhenti.
+I wrote `greting` but the variable name was `greeting`.
+The computer can't guess my intent — it looked for exactly `greting`,
+didn't find it, and stopped immediately.
 
 **How I fixed it:**
-Ganti `greting` jadi `greeting` — sesuai nama variabel yang dideklarasikan.
+Changed `greting` to `greeting` — matching the declared variable name.
 
 **What I learned:**
-Komputer tidak punya konteks. Dia eksekusi persis apa yang ditulis,
-bukan apa yang dimaksud. Typo sekecil apapun = error.
+The computer has no context. It executes exactly what is written,
+not what is meant. Even the smallest typo = error.

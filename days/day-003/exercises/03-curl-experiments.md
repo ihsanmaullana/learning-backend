@@ -2,15 +2,15 @@
 
 ## curl -I https://github.com
 - Status: 200
-- Apa artinya? Berhasil atau success
+- What does it mean? Success — the request was fulfilled.
 
 ## curl -I https://github.com/halaman-yang-tidak-ada-sama-sekali
 - Status: 404
-- Apa artinya? Halaman tidak ditemukan atau tidak ada
+- What does it mean? Page not found — the requested resource does not exist.
 
 ## curl -I https://google.com
 - Status: 301
-- Apa artinya? Halaman telah dipindah atau dialihkan
+- What does it mean? The page has been moved or redirected.
 
 ## Observations
-- perbedaannya kalau 200 itu berhasil, kalau 404 itu halaman yang dituju tidak ditemukan atau tidak ada, sedangkan 301 halaman telah dipindahkan atau dialihkan
+- The difference: 200 means success, 404 means the target page was not found or does not exist, and 301 means the page has been moved or redirected.

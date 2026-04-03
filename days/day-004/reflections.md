@@ -1,14 +1,14 @@
 # Day 004 - Reflections
 
 ## What went well
-- Berhasil jalankan file .js pertama dengan Node.js
-- Berhasil debug error pertama sendiri
+- Successfully ran my first .js file with Node.js
+- Successfully debugged my first error on my own
 
 ## What was hard
-- Yang bikin saya cukup sedikit bingung adalah membaca dan memahami pesan error yang muncul ketika kode saya error
+- Reading and understanding the error message that appeared when my code broke was a bit confusing at first
 
 ## One thing that clicked today
-- Momen yang menarik menurut saya hari ini itu momen dimana saya baru tau kalau bisa tulis kode javascript langsung di browser di bagian console, saya kira itu cuman bisa nampilin output aja.
+- The interesting moment today was realizing you can write JavaScript directly in the browser console — I thought it could only display output, not execute code.
 
 ## Question I still have
-- Saya itu masih bingung terkait kenapa saya harus belajar javascript, padahal kan bisa langsung ke node js atau typescript, bener gak sih?
+- I'm still unsure why I need to learn JavaScript first, since I could go directly to Node.js or TypeScript — is that not the right approach?
