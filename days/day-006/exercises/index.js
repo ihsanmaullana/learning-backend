@@ -1,7 +1,7 @@
-// Import chalk - package yang baru kita install
+// Import chalk - the package we just installed
 const chalk = require('chalk');
 
-// Informasi tentang project ini
+// Project information
 const projectInfo = {
   name: 'learning-backend',
   currentDay: 6,
@@ -9,7 +9,7 @@ const projectInfo = {
   author: 'Ihsan Maulana'
 };
 
-// Tampilkan informasi dengan warna
+// Display information with colors
 console.log(chalk.green('=== Project Info ==='));
 console.log(chalk.blue('Name:'), projectInfo.name);
 console.log(chalk.blue('Day:'), projectInfo.currentDay);

@@ -1,19 +1,45 @@
-# HTTP Request/Response Observation
+# Exercise 2 — HTTP Request/Response Observation
 
-## Website: github.com
+## Website Observed: `github.com`
 
-### First request
-- Method: GET
-- Status Code: 200
+### Tool Used
 
-### Total requests
-- How many total requests to load 1 page? = 267 requests
+Browser DevTools → Network tab (opened before page load, with cache disabled)
 
-### File types downloaded (approximate)
-- HTML: 1
-- CSS: 35
-- JavaScript: 198
-- Images: 6
+---
 
-### Observations
-- The number of requests was quite surprising — that many just for one page. Only 1 HTML file and 6 images; JavaScript made up the vast majority.
+### First Request
+
+| Property    | Value |
+|-------------|-------|
+| Method      | `GET` |
+| Status Code | `200` |
+
+---
+
+### Total Requests to Load 1 Page
+
+**267 requests**
+
+---
+
+### File Types Downloaded (approximate)
+
+| Type         | Count |
+|--------------|-------|
+| HTML         | 1     |
+| CSS          | 35    |
+| JavaScript   | 198   |
+| Images       | 6     |
+
+---
+
+## Observations
+
+267 requests just to load a single page was genuinely surprising. The breakdown makes
+sense in hindsight: only 1 HTML file is needed (the page structure), but a modern web
+application pulls in dozens of stylesheets and nearly 200 JavaScript files for
+interactivity, analytics, and feature modules.
+
+This highlights why **performance optimization** (bundling, minification, lazy loading)
+is such an important topic in web development — each network request adds latency.

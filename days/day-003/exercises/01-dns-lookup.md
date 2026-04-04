@@ -1,17 +1,24 @@
-# DNS Lookup Experiments
+# Exercise 1 — DNS Lookup
 
-## github.com
-- IP Address:  20.205.243.166
-- DNS Server: 10.255.255.254
+## Command Used
 
-## google.com
-- IP Address:  142.251.12.100
+```bash
+nslookup <domain>
+```
 
-## youtube.com
-- IP Address: 172.217.194.190
+## Results
 
-## detik.com
-- IP Address: 103.49.221.211
+| Domain       | IP Address        | DNS Server      |
+|--------------|-------------------|-----------------|
+| `github.com` | `20.205.243.166`  | `10.255.255.254`|
+| `google.com` | `142.251.12.100`  | —               |
+| `youtube.com`| `172.217.194.190` | —               |
+| `detik.com`  | `103.49.221.211`  | —               |
 
 ## Observations
-To prevent crashes, the IP needs to be distributed—either to route us to the nearest location or to direct us to a less crowded one
+
+Different domains resolve to different IP addresses, and large platforms like Google
+and YouTube often return different IPs depending on your location and the time of the request.
+This is because they use **load balancers** and **CDNs (Content Delivery Networks)** to
+distribute traffic — routing users to the nearest or least-congested server to improve
+speed and prevent overload.
