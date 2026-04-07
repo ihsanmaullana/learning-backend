@@ -101,7 +101,7 @@ Each day folder may contain:
 
 | Project | Status | Description |
 |---------|--------|-------------|
-| [ecommerce-platform](https://github.com/ihsanmaulana/ecommerce-platform) | Setup | The main capstone project. Currently initialized with a README only — development starts once JavaScript fundamentals are solid. |
+| [ecommerce-platform](https://github.com/ihsanmaullana/ecommerce-platform) | Setup | The main capstone project. Currently initialized with a README only — development starts once JavaScript fundamentals are solid. |
 
 ---
 
