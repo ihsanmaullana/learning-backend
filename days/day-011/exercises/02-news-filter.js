@@ -1,16 +1,16 @@
 const newsArticle = {
-  title: "Harga emas meningkat tajam",
+  title: "Gold prices surge sharply",
   source: "cnbc.com",
   ageInHours: 16,
   isVerified: true
 };
 
 if (newsArticle.ageInHours > 24) {
-  console.log("Berita terlalu lama, skip");
+  console.log("Article is too old, skipping");
 } else if (!newsArticle.isVerified) {
-  console.log("Sumber tidak terverifikasi, skip");
+  console.log("Source is not verified, skipping");
 } else if (!newsArticle.title) {
-  console.log("Judul tidak ada, skip");
+  console.log("Article has no title, skipping");
 } else {
-  console.log(`Berita layak ditampilkan: ${newsArticle.title}`);
+  console.log(`Article is safe to display: ${newsArticle.title}`);
 }

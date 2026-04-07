@@ -2,8 +2,9 @@ function sayHello() {
   console.log("hello");
 }
 
-// Kita "titipkan resep" ke variabel lain
+// Storing the function reference in another variable
+// (passing the recipe, not calling it yet)
 const myFunction = sayHello;
 
-// Sekarang jalankan dari variabel itu
+// Now call it from the variable
 myFunction();

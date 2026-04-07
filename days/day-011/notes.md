@@ -1,49 +1,48 @@
-# Day 11 — Operators & Conditionals (Lanjutan)
+# Day 11 — Operators & Conditionals (Continued)
 
 ## == vs ===
-Dua operator perbandingan di JavaScript dengan cara kerja berbeda.
+Two comparison operators in JavaScript that work very differently.
 
-`==` (loose equality) membandingkan nilai setelah tipe data disamakan
-dulu secara otomatis oleh JavaScript. Proses ini disebut type coercion.
-Berbahaya karena hasilnya tidak terduga.
+`==` (loose equality) compares values after automatically converting types to match.
+This process is called type coercion. It's dangerous because the results can be unexpected.
 
-`===` (strict equality) membandingkan nilai DAN tipe data sekaligus.
-Tidak ada konversi otomatis. Ini yang selalu harus dipakai.
+`===` (strict equality) compares both value AND type simultaneously.
+No automatic conversion happens. This is always the one to use.
 
-Aturan: gunakan === selalu, == tidak pernah.
+**Rule: always use `===`, never `==`.**
 
 ## Type Coercion
-Proses JavaScript mengubah tipe data secara otomatis saat membandingkan
-dua nilai yang berbeda tipe. Terjadi diam-diam tanpa diminta.
+The process where JavaScript silently converts a value's type during comparison.
+It happens automatically, without being asked.
 
-Contoh:
-- 1 == "1" → JavaScript ubah "1" jadi angka 1 → true
-- 0 == false → JavaScript ubah false jadi 0 → true
+Examples:
+- `1 == "1"` → JavaScript converts `"1"` to number `1` → `true`
+- `0 == false` → JavaScript converts `false` to number `0` → `true`
 
 ## Falsy Values
-Ada 6 nilai yang dievaluasi sebagai false di dalam kondisi if:
-- false
-- 0
-- ""
-- null
-- undefined
-- NaN
+There are exactly 6 values that evaluate as `false` inside an `if` condition:
+- `false`
+- `0`
+- `""`
+- `null`
+- `undefined`
+- `NaN`
 
-Semua nilai lain dianggap truthy — termasuk "0", [], dan {}.
+Everything else is truthy — including `"0"`, `[]`, and `{}`.
 
-## Jebakan Umum
-Nilai 0 dan "" bukan berarti variabelnya tidak ada.
-Variabelnya ada, nilainya ada, tapi JavaScript tetap evaluasi sebagai false.
-Contoh: userAge = 0 akan dianggap "belum diisi" kalau tidak hati-hati.
+## Common Traps
+`0` and `""` don't mean a variable doesn't exist.
+The variable is there, the value is there — JavaScript just evaluates them as false.
+Example: `userAge = 0` will be treated as "not filled in" if you're not careful.
 
 ## Short-circuit Evaluation
-Saat pakai &&, JavaScript baca dari kiri ke kanan.
-Kalau nilai pertama sudah falsy, langsung berhenti — tidak cek berikutnya.
-Kalau pakai ||, kalau nilai pertama sudah truthy, langsung berhenti.
+With `&&`, JavaScript reads left to right.
+If the first value is already falsy, it stops immediately — it won't check the rest.
+With `||`, if the first value is already truthy, it stops immediately.
 
-## Koneksi ke capital-pulse
-Logika filter berita memakai semua konsep ini:
-- Cek ageInHours > 24 → skip berita lama
-- Cek !isVerified → skip sumber tidak terpercaya
-- Cek !title → skip berita tanpa judul
-- else → berita layak ditampilkan
+## Connection to capital-pulse
+The news filter logic uses all of these concepts:
+- Check `ageInHours > 24` → skip old articles
+- Check `!isVerified` → skip unverified sources
+- Check `!title` → skip articles with no title
+- `else` → article is safe to display

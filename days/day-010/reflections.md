@@ -1,10 +1,13 @@
 # Day 10 — Reflections
 
-## Yang Paling Mudah Dipahami
-if else atau conditional statement itu menurut saya mudah kok dipahami karna kaya kehidupan sehari hari aja kalo misal kondisi a maka punya plan b, kalo plan b gagal maka plan c, dan lainnya lah
+## What Clicked Immediately
+if/else is easy to understand because it mirrors real-life decision making — if condition A is true, do this; if not, try plan B; if that also fails, fall back to plan C.
 
-## Yang Masih Membingungkan
-yang masih saya bingungin itu paling cuma mau tau aja sih apakah if selalu harus ada else, kalo if doang tanpa else gimana
+## What Was Still Confusing
+Whether `if` always needs an `else` — and what happens if you just write `if` alone with no `else`.
 
-## Kalau Harus Jelasin ke Orang Awam
-analoginya gini, kita mau main ke tempat ihsan, kalo isan ada di rumah kita masuk ke rumah, kalo ihsan gak ada dirumah dia lagi main kita tunggu diluar, tapi kalo ihsan emang ga akan pulang atau semua kondisi gak valid yaudah kita pulang
+The answer: `else` is completely optional. A standalone `if` block is perfectly valid.
+If the condition is false and there's no `else`, the program simply moves on to the next line.
+
+## How I Would Explain Conditionals to a Non-Developer
+Imagine you're visiting a friend. If your friend is home, you go inside. If they're out but coming back soon, you wait outside. If they're definitely not returning, you head home. The program works the same way — it checks each condition in order and follows the first one that matches.

@@ -19,4 +19,4 @@ console.log("--- Data Types ---");
 console.log(typeof productName);
 console.log(typeof productPrice);
 console.log(typeof isAvailable);
-console.log(typeof discount); // perhatikan hasilnya — ini ada kejutan kecil
+console.log(typeof discount); // note the output — there's a small surprise here (typeof null returns "object")

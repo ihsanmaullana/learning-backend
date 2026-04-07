@@ -5,7 +5,7 @@ if (age >= 18) {
   console.log("Welcome!");
 } else {
   console.log("Cannot enter.");
-} //Hasilnya pasti welcome!, karna age diatas atau sama dengan 18
+} // Output: "Welcome!" — age is above or equal to 18
 
 
 // Exercise 2: Score grader
@@ -19,7 +19,7 @@ if (score >= 90) {
   console.log("Grade: C");
 } else {
   console.log("Grade: D");
-} //Udah pasti hasilnya Grade B, karna nilainya score itu 85, dan kondisi diatas atau sama dengan 75 yang paling pas adalah grade B, setelah ketemu kode bawah kondisi lain akan diabaikan.
+} // Output: "Grade: B" — score is 85, which matches >= 75. Once a match is found, the rest are skipped.
 
 
 // Exercise 3: Simple login check
@@ -30,4 +30,4 @@ if (inputPassword === correctPassword) {
   console.log("Login successful");
 } else {
   console.log("Wrong password");
-} //Pasti successful, karna pas dibandingkan itu sama secara tipe data atau isinya
+} // Output: "Wrong password" — === is case-sensitive, so "OpenSesame" !== "opensesame"

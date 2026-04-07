@@ -1,27 +1,27 @@
 # Day 8 — Variables & Data Types
 
-## Apa itu Variable?
-Variable adalah wadah untuk menyimpan sebuah nilai yang bisa digunakan kembali kapanpun dibutuhkan.
-Analoginya seperti toples berlabel — toplesnya adalah variable, labelnya adalah nama variable, isinya adalah nilainya.
+## What Is a Variable?
+A variable is a container for storing a value that can be reused whenever needed.
+Think of it like a labeled jar — the jar is the variable, the label is the variable name, and the contents are the value.
 
-## Bedanya `const` dan `let`
+## `const` vs `let`
 
-| Keyword | Bisa Diubah? | Kapan Dipakai |
-|---|---|---|
-| `const` | ❌ Tidak | Nilai yang tidak akan berubah |
-| `let` | ✅ Ya | Nilai yang bisa berubah |
+| Keyword | Reassignable? | When to Use |
+|---------|--------------|-------------|
+| `const` | No  | Values that will never change |
+| `let`   | Yes | Values that may change over time |
 
-## Bedanya `null` dan `undefined`
+## `null` vs `undefined`
 
-| Tipe | Artinya | Analogi |
-|---|---|---|
-| `null` | Kotaknya ada, isinya sengaja dikosongkan | Toples kosong yang memang sengaja dikosongkan |
-| `undefined` | Kotaknya ada, tapi belum pernah diisi | Toples yang lupa diisi |
+| Type        | Meaning                                      | Analogy                              |
+|-------------|----------------------------------------------|--------------------------------------|
+| `null`      | The container exists, intentionally emptied  | A jar that was deliberately left empty |
+| `undefined` | The container exists, but was never filled   | A jar that was forgotten to be filled  |
 
-## Tipe Data Dasar di JavaScript
+## Primitive Data Types in JavaScript
 
-- **Number** — angka, bisa dihitung
-- **String** — teks, dibungkus kutip
-- **Boolean** — hanya `true` atau `false`
-- **Null** — sengaja dikosongkan
-- **Undefined** — belum diisi
+- **Number** — numeric values, supports arithmetic
+- **String** — text, wrapped in quotes
+- **Boolean** — only `true` or `false`
+- **Null** — intentionally empty
+- **Undefined** — not yet assigned

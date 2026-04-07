@@ -1,10 +1,12 @@
 # Day 9 — Reflections
 
-## Yang Paling Mudah Dipahami
-Memahami object menurut saya masih sangat mudah karna tidak jauh beda dengan variable
+## What Clicked Immediately
+Objects were easy to grasp because they're not far from what I already understood about variables — you're just grouping multiple pieces of related data under one name.
 
-## Yang Masih Membingungkan
-yang masih saya bingungin itu kalau objectnya yang pakai notation dan satunya itu kapan yang tepat disiuasi apa
+## What Was Still Confusing
+When to use dot notation vs. bracket notation — they both do the same thing on the surface, so it wasn't immediately clear when one is better than the other.
 
-## Kalau Harus Jelasin ke Orang Awam
-object itu kaya lemari baju, yang bisa banyak pintunya, setiap pintu itu adalah key, dan isinya adalah value, kita bisa bebas isi apa aja di lemari kita, dan lemarinya itu punya lebel nama
+After thinking it through: dot notation is the default for clean, readable code. Bracket notation is needed when the key is dynamic (stored in a variable) or contains characters that dot notation can't handle.
+
+## How I Would Explain Objects to a Non-Developer
+An object is like a wardrobe. It can have many drawers — each drawer is a key, and what's inside is the value. You can put anything you want in each drawer, and the whole wardrobe has a label (the variable name) so you know what it belongs to.

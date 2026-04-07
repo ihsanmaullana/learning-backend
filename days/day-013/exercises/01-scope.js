@@ -1,35 +1,37 @@
-//LATIHAN 1
+// EXERCISE 1: Global vs Function Scope
 const siteName = "capital-pulse";
 
 function showSiteInfo() {
     const version = "1.0";
-    console.log(siteName); // Bisa diakses karna siteName ada di scope global
-    console.log(version);  // Bisa diakses juga karna version ada satu scope di function ini
+    console.log(siteName); // accessible — siteName is in global scope
+    console.log(version);  // accessible — version is in the same function scope
 }
 
 showSiteInfo();
-console.log(siteName); // Bisa diakses karna sama sama di global scope
-// console.log(version);  // tidak bisa diakses karna variable version ada di dalam scope function showSiteInfo
+console.log(siteName); // accessible — still in global scope
+// console.log(version); // would throw ReferenceError — version only exists inside showSiteInfo
 
-//LATIHAN 2
+
+// EXERCISE 2: Block Scope with a Conditional
 function calculateTotal(price, quantity) {
-    let total = 0; // deklarasi di function scope, beri nilai default
+    let total = 0; // declared in function scope with a default value
 
     if (quantity > 0) {
-        total = price * quantity; // isi nilainya — tanpa let/const
+        total = price * quantity; // updates the existing variable — no let/const here
     }
 
-    return total; // selalu return, apapun yang terjadi
+    return total; // always returns, regardless of the condition
 }
 
-console.log(calculateTotal(50000, 3));  // harusnya 150000
-console.log(calculateTotal(50000, 0));  // harusnya 0, bukan undefined
+console.log(calculateTotal(50000, 3));  // 150000
+console.log(calculateTotal(50000, 0));  // 0 — not undefined, because total was initialized above
 
-//LATIHAN 3
+
+// EXERCISE 3: Scope with Arrow Functions
 const getUserSummary = (name, age) => {
-  const summary = `Name: ${name}, Age: ${age}`
+  const summary = `Name: ${name}, Age: ${age}`;
   return summary;
-}
+};
 
 console.log(getUserSummary("Ihsan", 24));
 console.log(getUserSummary("Budi", 25));

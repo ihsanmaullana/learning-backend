@@ -1,19 +1,40 @@
 # Day 12 — Functions
 
-## Apa itu fungsi?
-Fungsi adalah blok kode yang dibuat untuk menjalankan tugas tertentu dan bisa digunakan kembali kapan saja dibutuhkan. Fungsi membantu kita mengelompokkan logika agar kode lebih rapi dan terstruktur.
+## What Is a Function?
+A function is a named block of code designed to perform a specific task and reuse it
+whenever needed. Functions help group logic so that code stays clean and organized.
 
-## Kenapa fungsi penting?
-Fungsi penting karena membuat kode lebih efisien, mudah dibaca, dan mudah dikelola. Dengan fungsi, kita tidak perlu menulis ulang kode yang sama berulang-ulang, sehingga mengurangi kesalahan dan membuat program lebih scalable.
+## Why Functions Matter
+Functions make code more efficient, readable, and maintainable. Instead of rewriting
+the same logic over and over, you define it once and call it by name. This reduces
+mistakes and makes programs easier to scale.
 
-## Tiga cara nulis fungsi
-Ada tiga cara umum menulis fungsi di JavaScript:
-1. Function Declaration → menggunakan keyword `function`
-2. Function Expression → fungsi disimpan dalam variable
-3. Arrow Function → penulisan lebih singkat menggunakan tanda `=>`
+## Three Ways to Write a Function
 
-## Return value
-Return value adalah nilai yang dikembalikan oleh fungsi setelah dijalankan. Dengan `return`, hasil dari fungsi bisa digunakan kembali di bagian kode lain, bukan hanya ditampilkan saja.
+**1. Function Declaration** — uses the `function` keyword:
+```js
+function greet(name) {
+  return `Hello, ${name}`;
+}
+```
 
-## Fungsi memanggil fungsi
-Fungsi bisa memanggil fungsi lain di dalamnya untuk menjalankan tugas yang lebih kompleks. Ini membantu membagi masalah besar menjadi bagian-bagian kecil yang lebih mudah dipahami dan dikelola.
+**2. Function Expression** — the function is stored in a variable:
+```js
+const greet = function(name) {
+  return `Hello, ${name}`;
+};
+```
+
+**3. Arrow Function** — shorter syntax using `=>`:
+```js
+const greet = (name) => `Hello, ${name}`;
+```
+
+## Return Value
+A return value is the result a function sends back after it runs. With `return`,
+the output of the function can be used elsewhere in the code — not just printed.
+A function without `return` gives back `undefined`.
+
+## Functions Calling Functions
+A function can call other functions inside it to break down complex tasks into
+smaller, more manageable pieces. This is the foundation of modular thinking.

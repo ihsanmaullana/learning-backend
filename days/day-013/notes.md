@@ -1,22 +1,25 @@
 # Day 13 — Scope
 
-## Apa itu Scope?
-Scope itu tempat atau area di dalam kode yang menentukan sebuah variable bisa dipakai di mana.
+## What Is Scope?
+Scope is the region of code where a variable can be accessed. It defines where a
+variable "lives" and from which parts of the program it can be used.
 
-## Tiga Jenis Scope
-- **Global Scope**: variable yang dibuat di luar function atau block, jadi bisa dipakai di mana saja.
-- **Function Scope**: variable yang dibuat di dalam function, cuma bisa dipakai di dalam function itu.
-- **Block Scope**: variable yang dibuat di dalam block seperti `if`, `for`, atau `while`, cuma bisa dipakai di dalam block tersebut.
+## Three Types of Scope
+
+- **Global Scope** — a variable declared outside any function or block. It can be accessed from anywhere in the program.
+- **Function Scope** — a variable declared inside a function. It only exists within that function and cannot be accessed from outside.
+- **Block Scope** — a variable declared inside a block like `if`, `for`, or `while`. It only exists within that block.
 
 ## Scope Chain
-Kalau kita manggil sebuah variable, JavaScript bakal nyari dulu di scope saat ini.
-Kalau nggak ketemu, dia bakal naik ke scope di luar, terus ke luar lagi, sampai ke global.
+When JavaScript tries to use a variable, it first looks in the current scope.
+If it's not there, it moves up to the outer scope, then further out, until it reaches global scope.
 
-Kalau sampai global masih nggak ketemu, baru muncul error.
+If the variable still isn't found at global level, JavaScript throws a `ReferenceError`.
 
-Sebaliknya, variable yang ada di dalam (inner scope) nggak bisa diakses dari luar (outer scope).
+The reverse is not true: variables in an inner scope cannot be accessed from an outer scope.
 
-## var vs let vs const soal Scope
-- `var` sekarang udah jarang dipakai karena dia nggak punya block scope, jadi bisa bikin bug.
-- `let` dan `const` punya block scope, jadi lebih aman.
-- Biasanya pakai `const` kalau nilainya nggak berubah, dan `let` kalau bisa berubah.
+## var vs let vs const — Scope Differences
+
+- `var` is rarely used today because it ignores block scope, which leads to hard-to-find bugs.
+- `let` and `const` both respect block scope, making them safer and more predictable.
+- Use `const` by default when the value won't change, and `let` when it will.

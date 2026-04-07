@@ -1,26 +1,39 @@
 # Day 9 — Objects
 
-## Apa itu Object?
-Object adalah sekumpulan data yang berhubungan yang di dalam data itu mengandung key dan value
+## What Is an Object?
+An object is a collection of related data, where each piece of data is stored as a key-value pair.
 
-## Cara membuat Object
-Mirip seperti membuat variable, tapi bedanya adalah ini menggunakan {} setelah =
-contoh:
+## How to Create an Object
+Similar to declaring a variable, but with curly braces `{}` after the `=`:
+
+```js
 const product = {
   name: "Laptop",
   quantity: 20
 };
+```
 
-jadi untuk memisahkan satu key dan key lainnya dipisah pakai (,)
+Each key-value pair is separated by a comma `,`.
 
-## Cara mengakses data dalam Object
-ada 2
-- dot notation, contohnya:
+## How to Access Data Inside an Object
+There are two ways:
+
+**Dot notation:**
+```js
 console.log(product.name);
-satunya lagi:
-console.log(product["name"]);
+```
 
-## Null vs string kosong vs undefined
-kalo null itu emang sengaja dikosongin atau datanya ga ada
-kalau string kosong itu datanya ada tapi ga ada isinya, cuma string kosong aja
-kalo undefined gajelas datanya ada apa nggak
+**Bracket notation:**
+```js
+console.log(product["name"]);
+```
+
+Dot notation is cleaner and used most of the time. Bracket notation is useful when the key is dynamic (e.g., stored in a variable) or when the key contains special characters.
+
+## null vs Empty String vs undefined
+
+| Value       | Meaning                                          |
+|-------------|--------------------------------------------------|
+| `null`      | Data intentionally absent or cleared             |
+| `""`        | Data exists, but the content is an empty string  |
+| `undefined` | Data was never assigned — its existence is unclear |

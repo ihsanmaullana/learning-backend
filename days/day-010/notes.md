@@ -1,33 +1,41 @@
 # Day 10 — Conditionals (if/else)
 
-## Apa itu Conditional Statement?
-Conditional statement itu dimana percabangan logika jika suatu kondisi tidak terpenuhi maka kondisi yang cocok akan dijalankan.
+## What Is a Conditional Statement?
+A conditional statement is a way to branch the logic of a program — if a certain condition is met, one block of code runs; otherwise, a different block runs.
 
-## Struktur if/else
-strukturnya ada if, atau inisialisasi statement, lalu ada (), kondisi apa yang harus ada, lalu didalam {
-  disini code akan dijalankan kalo kondisinya cocok
-} else if(kondisi kedua){
-  ini kalo kondisinya yang pertama tadi gak cocok dia akan coba cocokin di kondisi kedua ini
-} kalo mau ditambah kondisi terus bisa, tapi bisa langsung else {
-  kalo semua kondisi gak cocok maka akan lakukan apa
+## Structure of if/else
+
+```js
+if (condition) {
+  // runs if condition is true
+} else if (secondCondition) {
+  // runs if the first condition was false, but this one is true
+} else {
+  // runs if none of the above conditions matched
 }
+```
 
-## Operator Perbandingan
-ada beberapa operator perbandingan
-== membandingkan apakah a itu sama dengan b, tapi tipe datanya kalo satunya "100" dan satunya 100, akan dianggap sama karna dia akan mengkonversi yang pertama tadi jadi sama
-=== ini sangat strick jadi kalo tipe datanya beda itu ga akan dianggap sama
-> ini lebih dari
-< ini kurang dari
->= ini lebih dari sama dengan jadi misal apakah 80 itu >= 80, jawabannya iya
-<= kalo itu sebaliknya tadi
-dan lainnya seperti !=, !==
+You can chain as many `else if` blocks as needed. Once a matching condition is found,
+the rest are skipped.
 
-## Yang Perlu Diingat
-- JavaScript baca kondisi dari atas ke bawah
-- Begitu ketemu kondisi true, blok lain diabaikan
-- === itu case-sensitive untuk string
+## Comparison Operators
 
-## Catatan Tambahan
-File 01-equality.js di folder ini dibuat lebih awal sebelum
-materi if/else dibahas. Akan didalami lagi setelah kondisi
-dan operator dipelajari dengan benar.
+| Operator | Description |
+|----------|-------------|
+| `==`  | Loose equality — compares values after automatic type conversion (type coercion) |
+| `===` | Strict equality — compares both value AND type, no conversion |
+| `>`   | Greater than |
+| `<`   | Less than |
+| `>=`  | Greater than or equal to |
+| `<=`  | Less than or equal to |
+| `!=`  | Loose not-equal |
+| `!==` | Strict not-equal |
+
+## Things to Remember
+- JavaScript reads conditions top to bottom
+- Once a matching `true` condition is found, all remaining blocks are ignored
+- `===` is case-sensitive when comparing strings
+
+## Additional Note
+The `01-equality.js` file in this folder was created earlier, before the if/else
+material was covered. It will be revisited once conditions and operators are properly understood.

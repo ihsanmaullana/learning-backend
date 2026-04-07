@@ -1,4 +1,4 @@
-// Menyimpan data satu produk dalam sebuah Object
+// Storing a single product's data inside an Object
 const product = {
     name: "Nike Air Max",
     price: 1200000,
@@ -7,18 +7,18 @@ const product = {
     category: "Footwear"
 };
 
-// Mengakses data dengan dot notation
-console.log("Nama produk:", product.name);
-console.log("Harga:", product.price);
-console.log("Stok:", product.stock);
+// Accessing data with dot notation
+console.log("Product name:", product.name);
+console.log("Price:", product.price);
+console.log("Stock:", product.stock);
 
-// Mengubah nilai yang sudah ada
+// Updating an existing value
 product.price = 1350000;
-console.log("Harga setelah naik:", product.price);
+console.log("Price after increase:", product.price);
 
-// Menambah key baru yang belum ada sebelumnya
+// Adding a new key that didn't exist before
 product.discount = 10;
-console.log("Diskon:", product.discount, "%");
+console.log("Discount:", product.discount, "%");
 
-// Melihat seluruh isi object sekaligus
-console.log("Data produk lengkap:", product);
+// Viewing the entire object at once
+console.log("Full product data:", product);

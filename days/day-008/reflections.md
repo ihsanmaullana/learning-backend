@@ -1,19 +1,19 @@
 # Day 8 — Reflections
 
-## Yang Paling Mudah Dipahami
-Variable — konsepnya straightforward. Data disimpan sementara di memori,
-dikasih nama, dan bisa dipanggil kapanpun dibutuhkan.
+## What Clicked Immediately
+Variables — the concept is straightforward. Data gets stored temporarily in memory,
+given a name, and can be retrieved whenever needed.
 
-## Yang Masih Membingungkan
-Kenapa `typeof null` hasilnya `"object"` padahal null bukan object?
+## What Was Still Confusing
+Why does `typeof null` return `"object"` when null is clearly not an object?
 
-Ternyata ini bug lama JavaScript sejak 1995 yang sengaja tidak diperbaiki
-karena alasan **backward compatibility** — kalau diperbaiki, semua website
-lama yang sudah bergantung pada behavior ini akan rusak seketika.
-Kadang di dunia software, mempertahankan bug lebih aman daripada memperbaikinya.
+Turns out this is a bug from 1995 that was intentionally never fixed due to
+**backward compatibility** — if it were corrected, every website already relying on
+that behavior would break. Sometimes in software, preserving a known bug is safer
+than fixing it.
 
-## Kalau Harus Jelasin Variable ke Orang Awam
-Variable itu bagaikan toples berlabel. Toplesnya adalah variable-nya,
-labelnya adalah nama yang kita kasih, dan isinya adalah nilai yang kita simpan.
-Isi toples bisa diambil kapanpun dan diganti kapanpun — tergantung pakai
-`let` atau `const`.
+## How I Would Explain Variables to a Non-Developer
+A variable is like a labeled jar. The jar itself is the variable, the label is the
+name you give it, and whatever you put inside is the value. You can take the contents
+out at any time, and you can swap them out too — depending on whether you used `let`
+or `const`.

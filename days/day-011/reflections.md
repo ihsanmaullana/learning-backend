@@ -1,10 +1,12 @@
 # Day 11 — Reflections
 
-## Yang Paling Mudah Dipahami
-Saya dengan mudah belajar konsep if else ini, karna masih beririsan dengan day sebelumnya, tapi ini lebih advance aja dengan adanya perbandingan seperti == === dan && || !
+## What Clicked Immediately
+This topic overlapped with Day 10, so it felt familiar. The added concepts — `==` vs `===`, `&&`, `||`, and `!` — extended what I already knew about conditionals rather than replacing it.
 
-## Yang Masih Membingungkan
-saya kadang bingung untuk nulis kode yang clean itu pola pikirnya dari mana dan gimana caranya ngelatihnya
+## What Was Still Confusing
+How to write clean code consistently. It's not just about knowing the syntax — it's about knowing how to think through a problem in a structured way before typing anything. That kind of thinking takes practice.
 
-## Kalau Harus Jelasin ke Orang Awam
-jadi gini, == itu kaya kamu pinjemin pulpen ke temn kamu, kalau kamu pakai == aja itu pulpennya apa aja temen kamu akan maklumin dan mau pakai, dan tetap dianggap pulpen, kalo pakainya === temen kamu hanya mau jenis pulpen tertentu jadi kalopun sama sama pulpen dia ga akan mau terima karna jenis pulpennya beda
+## How I Would Explain `==` vs `===` to a Non-Developer
+Think of lending a pen to a friend.
+With `==`, your friend will accept any pen — as long as it writes, they're fine with it.
+With `===`, your friend only wants a specific brand and model. Even if it's still technically a pen, they'll reject it if it's not the exact one they asked for.

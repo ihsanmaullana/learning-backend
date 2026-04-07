@@ -1,25 +1,25 @@
 // ============================================
-// BAGIAN 1: == vs ===
+// PART 1: == vs ===
 // ============================================
 
-// Loose equality — JavaScript ubah tipe dulu sebelum bandingkan
-console.log(1 == "1");    // true  — berbahaya
-console.log(0 == false);  // true  — berbahaya
-console.log("" == false); // true  — berbahaya
+// Loose equality — JavaScript converts types before comparing
+console.log(1 == "1");    // true  — dangerous
+console.log(0 == false);  // true  — dangerous
+console.log("" == false); // true  — dangerous
 
-// Strict equality — tipe dan nilai harus sama persis
-console.log(1 === "1");   // false — 1 angka, "1" string
-console.log(0 === false); // false — 0 angka, false boolean
-console.log(1 === 1);     // true  — sama tipe, sama nilai
+// Strict equality — type and value must match exactly
+console.log(1 === "1");   // false — 1 is a number, "1" is a string
+console.log(0 === false); // false — 0 is a number, false is a boolean
+console.log(1 === 1);     // true  — same type, same value
 
-// Aturan: selalu pakai === tanpa terkecuali
+// Rule: always use === without exception
 
 
 // ============================================
-// BAGIAN 2: Falsy values di dalam kondisi if
+// PART 2: Falsy values inside an if condition
 // ============================================
 
-// Semua ini dievaluasi sebagai false
+// All of these evaluate as false
 const emptyString = "";
 const zero = 0;
 const nullValue = null;
@@ -30,58 +30,58 @@ const falseBool = false;
 if (emptyString) {
     console.log("emptyString: truthy");
 } else {
-    console.log("emptyString: falsy"); // ini yang jalan
+    console.log("emptyString: falsy"); // this runs
 }
 
 if (zero) {
     console.log("zero: truthy");
 } else {
-    console.log("zero: falsy"); // ini yang jalan
+    console.log("zero: falsy"); // this runs
 }
 
 if (nullValue) {
     console.log("nullValue: truthy");
 } else {
-    console.log("nullValue: falsy"); // ini yang jalan
+    console.log("nullValue: falsy"); // this runs
 }
 
 
 // ============================================
-// BAGIAN 3: Truthy values yang sering mengejutkan
+// PART 3: Truthy values that often surprise people
 // ============================================
 
-const zeroAsString = "0";   // string berisi "0" — truthy!
-const emptyArray = [];       // array kosong — truthy!
-const emptyObject = {};      // object kosong — truthy!
+const zeroAsString = "0";   // string containing "0" — truthy!
+const emptyArray = [];       // empty array — truthy!
+const emptyObject = {};      // empty object — truthy!
 
 if (zeroAsString) {
-    console.log("zeroAsString: truthy"); // ini yang jalan
+    console.log("zeroAsString: truthy"); // this runs
 }
 
 if (emptyArray) {
-    console.log("emptyArray: truthy"); // ini yang jalan
+    console.log("emptyArray: truthy"); // this runs
 }
 
 if (emptyObject) {
-    console.log("emptyObject: truthy"); // ini yang jalan
+    console.log("emptyObject: truthy"); // this runs
 }
 
 
 // ============================================
-// BAGIAN 4: Contoh nyata — validasi input user
+// PART 4: Real example — user input validation
 // ============================================
 
-const username = "";       // user tidak mengisi username
-const password = "abc123"; // user mengisi password
+const username = "";       // user left username blank
+const password = "abc123"; // user filled in password
 
-// Cek apakah kedua field sudah diisi
+// Check if both fields are filled
 if (username && password) {
-    console.log("Login diproses");
+    console.log("Processing login...");
 } else {
-    console.log("Username atau password kosong"); // ini yang jalan
+    console.log("Username or password is empty"); // this runs
 }
 
-// Kenapa ini works?
+// Why does this work?
 // username = "" → falsy
-// "" && "abc123" → langsung false, tidak perlu cek password
-// Ini namanya short-circuit evaluation — akan dibahas lebih dalam nanti
+// "" && "abc123" → immediately false, no need to check password
+// This is called short-circuit evaluation

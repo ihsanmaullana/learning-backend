@@ -1,21 +1,21 @@
-// Tugas:
-// Buat sebuah object yang merepresentasikan data diri kamu sebagai seorang developer.
+// Task:
+// Create an object that represents your own data as a developer.
 //
-// Ketentuan:
-// 1. Object harus memiliki minimal 5 key yang relevan (bebas dan kreatif).
-// 2. Value dalam object harus menggunakan minimal 3 tipe data berbeda:
+// Requirements:
+// 1. The object must have at least 5 relevant keys (be creative).
+// 2. Values must use at least 3 different data types:
 //    - string
 //    - number
 //    - boolean
-// 3. Setelah object dibuat, tambahkan satu key baru yang sebelumnya belum ada.
-// 4. Ubah salah satu value dari key yang sudah ada.
-// 5. Tampilkan isi object ke terminal:
-//    - Tidak sekaligus
-//    - Tampilkan satu per satu per key menggunakan dot notation
-// 6. Di baris terakhir, tampilkan seluruh object sekaligus.
+// 3. After the object is created, add one new key that wasn't there before.
+// 4. Update one existing value.
+// 5. Display the object's contents to the terminal:
+//    - Not all at once
+//    - One by one per key using dot notation
+// 6. On the last line, display the full object all at once.
 //
-// Catatan:
-// Jangan langsung bertanya sebelum mencoba minimal 15 menit.
+// Note:
+// Don't ask for help before trying for at least 15 minutes.
 
 const engineer = {
   fullName: "Ihsan Maulana",
@@ -28,11 +28,11 @@ const engineer = {
 engineer.hobby = "Traveling";
 engineer.age = 24;
 
-console.log(`Nama saya adalah ${engineer.fullName}`);
-console.log(`Usia saya ${engineer.age} Tahun`);
-console.log(`Teknologi yang saya gunakan ${engineer.techStack}`);
-console.log(`Apakah saya terverifikasi ${engineer.isVerified}`);
-console.log(`Motto saya ${engineer.motto}`);
-console.log(`Hobby saya ${engineer.hobby}`);
+console.log(`My name is ${engineer.fullName}`);
+console.log(`My age is ${engineer.age}`);
+console.log(`My tech stack is ${engineer.techStack}`);
+console.log(`Am I verified: ${engineer.isVerified}`);
+console.log(`My motto is ${engineer.motto}`);
+console.log(`My hobby is ${engineer.hobby}`);
 
 console.log(engineer);

@@ -1,25 +1,23 @@
-//My profile
-const fullName = "Ihsan Maulana"; //Karna nama saya gamungkin berubah
-let age = 23; //usia selalu berubah
-let homeTown = "Tangerang Selatan"; //tempat tinggal juga selalu berubah
-let isVerified = true; //karna bisa aja nanti dia berubah jadi gak verified lagi
-let phoneNumber = "0823123123123"; //karna tidak akan mungkin dilakukan manipulasi perhitungan, lalu saya pakai let karna nomer hp saya juga bisa berubah kapanpun
-let bio = null; //sesuai perintah, kenapa pakai let, kali aja nanti mau di isi
+// My profile
+const fullName = "Ihsan Maulana"; // const because my name will never change
+let age = 23;                      // let because age always changes
+let homeTown = "Tangerang Selatan"; // let because where I live can change
+let isVerified = true;             // let because verification status can change
+let phoneNumber = "0823123123123"; // let because phone numbers can change, and it's a string since we won't do math on it
+let bio = null;                    // null per the exercise instructions — let in case it gets filled in later
 
-//Menampilkan menggunakan console
-console.log(`Nama saya ${fullName}`);
-console.log(`Umur saya ${age}`);
-console.log(`Kota asal saya di ${homeTown}`);
-console.log(`Apakah saya terverifikasi ${isVerified}`);
-console.log(`Nomer hp saya ${phoneNumber}`);
-console.log(`Bio saya ${bio}`);
+// Display using console.log
+console.log(`My name is ${fullName}`);
+console.log(`My age is ${age}`);
+console.log(`My hometown is ${homeTown}`);
+console.log(`Am I verified: ${isVerified}`);
+console.log(`My phone number is ${phoneNumber}`);
+console.log(`My bio is ${bio}`);
 
-//Cek tipe datanya
+// Check data types
 console.log(typeof fullName);
 console.log(typeof age);
 console.log(typeof homeTown);
 console.log(typeof isVerified);
 console.log(typeof phoneNumber);
-console.log(typeof bio);
-
-
+console.log(typeof bio);   // outputs "object" — this is a known JavaScript quirk
