@@ -1,10 +1,10 @@
 # Day 13 — Reflections
 
 ## Yang Paling Mudah Dipahami
-[Isi]
+definisi scope sangat mudah dipahami
 
 ## Yang Masih Membingungkan
-[Isi — boleh jujur]
+lebih sering pakai const atau let sih kalau didalam scope membuat variable
 
 ## Kalau Harus Jelasin ke Orang Awam
-[Analogi dengan kata sendiri]
+scope itu kaya kita didalam mobil, kita bisa liat semua orang diluar kaca, tapi yang diluar tidak bisa melihat kita karna kacanya gelap
