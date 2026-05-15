@@ -11,6 +11,3 @@ object method itu dimana kita seperti memilih salah satu atau mau ambil semuanya
 
 ## Apa yang Akan Gua Lakukan Berbeda
 jadi tadi saya suka lupa kodenya tapi saya paham logikanya, saya akan lakukan minta clue nya aja atau cari struktur kodenya aja tanpa minta jawaban kode yang langsung di copas
-
-## Koneksi ke AccessGuard
-nanti setelah scanning dan menemukan beberapa hal terkait aksesibilitas miss itu akan ditampilkan tapi sebelum itu di filterasi dulu dengan filter 
